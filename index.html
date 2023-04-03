@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Online Novelláskötet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+Georgian&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script>
+        const novellak = [{"name":"A növény. -Schauermann Léna.html","title":"A növény. ","author":" Schauermann Léna "},{"name":"A magyar kikerics-Kompolti Áron.html","title":"A magyar kikerics","author":"Kompolti Áron"},{"name":"A búzavirág-Györgybíró Farkas.html","title":"A búzavirág","author":"Györgybíró Farkas"},{"name":"Bazsarózsa-Tóth Ági.html","title":"Bazsarózsa","author":"Tóth Ágnes"},{"name":"A tűzvirág dala-Aczél Bendegúz.html","title":"A tűzvirág dala","author":"Aczél Bendegúz"},{"name":"A lila gomba története-Német Blanka.html","title":"A lila gomba története","author":"Német Blanka"},{"name":"bodnar petra.html","title":"Cseresznyevirágok ","author":"Anonim"},{"name":"Egy emléknyi magnólia-Cseh Natália.html","title":"Egy emléknyi magnólia","author":"Cseh Natália"},{"name":"bárány barbara.html","title":"Beszélgetéseim egy Nárcisszal","author":"Bárány Barbara"},{"name":"Emberekről-Kovács Laura.html","title":"Emberekről","author":"Anoním"},{"name":"A varázsvilág őrzője a szelídgeszte-Kovács Petra.html","title":"A varázsvilág őrzője: a szelídgesztenye","author":"Anoním"},{"name":"Koszorú-Varga Natasa.html","title":"Koszorú","author":"Varga Natasa"},{"name":"ICU-Pillár Blanka.html","title":"ICU","author":"Pillár Blanka"},{"name":"Hol Isten őriz-Remák-Szabó Marcell.html","title":"Hol Isten őriz","author":"Napraforgó - Remák-Szabó Marcell"},{"name":"Kövirózsa-Tardos Szonja.html","title":"Kövirózsa","author":"Tardos Szonja"},{"name":"Jácint-Suhai Soma.html","title":"Jácint","author":"Suhai Soma"},{"name":"Márványmosoly-Simonyi Vencel Rudolf.html","title":"Márványmosoly","author":"Simonyi Vencel"},{"name":"Növény Háború-Nemet Blankanemet.html","title":"Növény Háború","author":"Nemet Blanka"},{"name":"Napkeltekor-Csanak Bencecsanak.html","title":"Napkeltekor","author":"Csanak Bence"},{"name":"Pitypang-lélekkel-Kislinder Evelin.html","title":"Pitypang-lélekkel","author":"Kislinder Evelin"},{"name":"Szomorúfűz.html","title":"Szomorúfűz","author":"Anonim"},{"name":"Szonett a levendulacsokorról-Virág Máté Gergely.html","title":"Szonett a levendulacsokorról","author":"Virág Máté Gergely"},{"name":"Rózsafehér-Gábor Blanka.html","title":"Rózsafehér","author":"Gábor Blanka"},{"name":"Százszorszép-Fórizs Emma.html","title":"Százszorszép","author":"Fórizs Emma"},{"name":"Tapogatózva-Demeter Virág.html","title":"Tapogatózva","author":"Anoním"},{"name":"Tavirózsák közt lebegve lenni-Kim Klára Rebeka.html","title":"Tavirózsák közt lebegve lenni","author":"Kim Klára Rebeka"},{"name":"Tulipán-Lucz Adél.html","title":"Tulipán","author":"Anoním"},{"name":"Táptalaj-Schreck Péter.html","title":"Táptalaj","author":"Schreck Péter"},{"name":"Zsálya-Schlotter Míra.html","title":"Zsálya","author":"Schlotter Míra"},{"name":"Temess el egy dáliával-Barlai Csenge.html","title":"Temess el egy dáliával","author":"Barlai Csenge"},{"name":"Építészek szörnyülködnek-Kovács Laura Jázmin.html","title":"Építészek szörnyülködnek","author":"Kovács Laura Jázmin"},{"name":"Az akácfák árnyékában-Jónyer Lili.html","title":"Az akácfák árnyékában","author":"Anoním"},{"name":"Boros Marcel Dávid-Moha.html","title":"Moha","author":"Boros Marcel Dávid"},{"name":"Fátyolos Hölgy-Jenei Zita.html","title":"Fátyolos Hölgy","author":"Jenei Zita"}]
+    
+        function load() {
+        var afodiv = document.getElementById("holder")
+        var length = novellak.length
+        for(i=0;i<length;i++) {
+            var url = `./${novellak[i].name}`
+            var elem = `<button class="btn btn-primary" onclick="window.location.href='${url}'" type="button" style="width: 50%;background: rgba(42,115,145,0.74);border-radius: 0px;border-width: 0px;">${novellak[i].title}</button><br><br>`
+            afodiv.innerHTML += elem
+            
+        }
+        }
+        </script>
+        <style>
+            body {
+                background-color: #ffffff;
+                background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000000' fill-opacity='0.14' fill-rule='evenodd'/%3E%3C/svg%3E");
+            }
+        </style>
+</head>
+
+<body onload="load();" style="background-color: whitesmoke">
+    <h1 style="text-align: center;background: rgb(42,115,145);padding-top: 2%;padding-bottom: 2%;color: var(--bs-light);">Tavaszi fesztivál novelláskötet</h1>
+    <div  id="holder" style="text-align: center;">
+	<br>
+    </div>
+    <a style="position: fixed; left: 10px; bottom: 20px; color: black;" href="./search.html"><strong>Keresés</strong></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
